@@ -1,0 +1,173 @@
+\noindent The form of $\mathcal{V}$ is due to the fact that, differently from the non hybrid case, the so-called \textit{error zeroing invariant subspace} may necessarily contain components of the plant and may not contain the entire exosystem, namely
+
+
+VA IN UN REMARK
+
+\begin{equation}
+\begin{bmatrix}
+x \\
+w
+\end{bmatrix}
+=
+\begin{bmatrix}
+\Pi_x  & \Pi_w \\
+0 & \Omega
+\end{bmatrix}
+\begin{bmatrix}
+s_1 \\
+s_2
+\end{bmatrix},
+\end{equation}
+
+
+\noindent with two set of parameters $s_1$ and $s_2$ that have flow and jump dynamics defined, respectively, by the following equations
+
+\begin{equation}\label{parameter:s}
+\begin{bmatrix}
+\dot{s}_1 \\
+\dot{s}_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+A_x  & A_w \\
+0 & S_r
+\end{bmatrix}
+\begin{bmatrix}
+s_1 \\
+s_2
+\end{bmatrix}, 
+\begin{bmatrix}
+    s_1^+\\
+    s_2^+
+\end{bmatrix}
+=
+\begin{bmatrix}
+E_x  & E_w \\
+0 & J_r
+\end{bmatrix}
+\begin{bmatrix}
+s_1 \\
+s_2
+\end{bmatrix}
+\end{equation}
+
+
+
+
+\noindent It follows that
+\begin{equation}
+\begin{bmatrix}
+\dot{x} \\
+\dot{w}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\Pi_x  & \Pi_w \\
+0 & \Omega
+\end{bmatrix}
+\begin{bmatrix}
+\dot{s}_1 \\
+\dot{s}_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+\Pi_x  & \Pi_w \\
+0 & \Omega
+\end{bmatrix}
+\begin{bmatrix}
+A_x  & A_w \\
+0 & S_r
+\end{bmatrix}
+\begin{bmatrix}
+s_1 \\
+s_2
+\end{bmatrix}
+\end{equation}
+
+\noindent Recalling equations (\ref{eq:system3}), it follows that
+\begin{equation}
+\begin{bmatrix}
+\dot{x} \\
+\dot{w}
+\end{bmatrix}
+=
+\begin{bmatrix}
+A & P \\
+0 & S
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+w
+\end{bmatrix}
++
+\begin{bmatrix}
+B \\
+0
+\end{bmatrix}
+u
+= 
+\begin{bmatrix}
+A & P \\
+0 & S
+\end{bmatrix}
+\begin{bmatrix}
+\Pi_x  & \Pi_w \\
+0 & \Omega
+\end{bmatrix}
+\begin{bmatrix}
+s_1 \\
+s_2
+\end{bmatrix}
++
+\begin{bmatrix}
+B \\
+0
+\end{bmatrix}
+u
+\end{equation}
+
+\noindent with control laws of the form (\ref{controlunpred}) it is shown that
+\begin{equation}
+\scriptsize
+\begin{bmatrix}
+A & P \\
+0 & S
+\end{bmatrix}
+\begin{bmatrix}
+\Pi_x  & \Pi_w \\
+0 & \Omega
+\end{bmatrix}
+\begin{bmatrix}
+s_1 \\
+s_2
+\end{bmatrix}
++
+\begin{bmatrix}
+B \\
+0
+\end{bmatrix}
+\begin{bmatrix}
+\Gamma_x &\Gamma_w
+\end{bmatrix}
+\begin{bmatrix}
+\Pi_x  & \Pi_w \\
+0 & \Omega
+\end{bmatrix}
+\begin{bmatrix}
+s_1 \\
+s_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+\Pi_x  & \Pi_w \\
+0 & \Omega
+\end{bmatrix}
+\begin{bmatrix}
+A_x  & A_w \\
+0 & S_r
+\end{bmatrix}
+\begin{bmatrix}
+s_1 \\
+s_2
+\end{bmatrix}
+\end{equation}
